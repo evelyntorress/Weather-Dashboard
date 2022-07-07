@@ -12,7 +12,9 @@ var cityName = document.getElementById("cityName");
 var citySearch = document.getElementById("citySearch");
 var displayCity = document.getElementById("displayCity");
 var cityTemp = document.getElementById("cityTemp");
+var cityWind = document.getElementById("cityWind");
 var cityHumidity = document.getElementById("cityHumidity");
+var cityUVindex = document.getElementById("cityUVindex");
 
 function getApi(requestUrl) {
     fetch(requestUrl)
@@ -24,11 +26,15 @@ function getApi(requestUrl) {
         console.log(data.name);
         console.log(data.main);
         console.log(data.main.temp);
+        console.log(data.main.wind);
         console.log(data.main.humidity);
+        console.log(data.main.uvindex);
+
         displayCity.textContent=data.name;
-        cityTemp.textContent= 'temperature: ' + data.main.temp + ' C';
-        cityHumidity.textContent=data.main.humidity;
-        
+        cityTemp.textContent= 'Temperature: ' + data.main.temp + ' C';
+        cityWind.textContent= 'Wind: ' + data.main.temp + ' MPH';
+        cityHumidity.textContent='Humidity: ' + data.main.humidity + '%';
+        cityUVindex.textContent='UV Index: ' + data.main.uvindex;
     })
   }
   

@@ -42,3 +42,12 @@ body{
   .btn{
     margin: 5px;
   }
+
+  /* Cards */
+
+.main-card{
+  padding: 50px 50px;
+}
+  .card-deck{
+    padding-left: 50px;
+  }
