@@ -9,58 +9,33 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+  <div class="site">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Weather Dashboard</h1>
-      <div class="container">
-        <!-- Timeblocks go here -->
-        
-        <h2>Current Time &amp; Date: <br /> <span id="time-display">00:00:00</span></h2>
-        <p id="currentDay" class="lead"></p>
-      </div>
+      
     </div>
   </div>
-  
- 
+
+   <!-- Timeblocks go here -->
+  <!-- <div class="container">
+    <h2>Current Time &amp; Date: <br /></h2>
+    <p id="currentDay" class="lead"></p>
+  </div> -->
+
+<h4>Search for a city:</h4>
+  <!-- Button for search -->
     <div>
       <input type="search" id="cityName"
       placeholder="Search for a city..." size="30">
       <button id="citySearch">Search</button>
     </div>
+<hr>
+  <br>
+  <div style = "display:flex; flex-direction:column; "class="btn-group" id="newbutton"></div>
 
   <br>
-
-
-  <div style = "display:flex; flex-direction:column;    "class="btn-group">
-    <button class="btn">Los Angeles</button>
-    
-    <button class="btn">Vancouver</button>
-  
-    <button class="btn">Bali</button>
-
-    <button class="btn">Tokyo</button>
-    
-    <button class="btn">Deli</button>
-  
-    <button class="btn">Rome</button>
-  </div>
-
-  <br>
-<!-- ============================== -->
-<!-- card modelo -->
-
-  <!-- <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title" id="displayCity">Card title</h5>
-      <p class="card-text" id="cityTemp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <p class="card-text" id="cityHumidity">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div> -->
-
- <!-- =============================== -->
-
+<!-- Main card -->
 <div class="main-card">
  <div class="card w-75">
   <div class="card-body">
@@ -72,52 +47,10 @@
   </div>
 </div>
 </div>
-
- <div class="card-deck">
-  <div class="card border-primary mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body text-primary">
-      <h5 class="card-title">Primary card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-
-  <div class="card border-success mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body text-success">
-      <h5 class="card-title">Success card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-
-<div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body text-primary">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-
-<div class="card border-success mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body text-success">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-
-<div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body text-primary">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
+<!-- Card deck -->
+ <div id="card-deck"></div>
 
 </div>
-
-
-
 
 
 
@@ -128,3 +61,5 @@
   <script src="assets/js/script.js"></script>
 </body>
 </html>
+
+

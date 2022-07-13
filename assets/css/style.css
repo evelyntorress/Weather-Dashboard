@@ -2,12 +2,12 @@
 /* Styling of the jumbotron */
 
 .jumbotron-fluid{
-    background-color:#CCD1E4 ;
+    background-color:#495C83 ;
     text-align: center;
 }
 
 .display-4{
-    color: #2E4C6D;
+    color: #F5EDDC;
     font-weight: bold;
 }
 
@@ -16,38 +16,23 @@
 body{
     margin: 20px;
 }
-
+.site{
+  padding: 0px 70px;
+}
 /* Buttons */
+.btn-group{
+  padding: 0px 850px 10px 10px;
+}
 
 
-.btn-group button {
-    background-color: #04AA6D; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
-  }
-  
-  .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #3e8e41;
-  }
 
-  .btn{
-    margin: 5px;
-  }
+
 
   /* Cards */
 
 .main-card{
   padding: 50px 50px;
 }
-  .card-deck{
-    padding-left: 50px;
+.card-deck{
+  padding-left: 50px;
   }
