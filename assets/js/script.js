@@ -43,10 +43,11 @@ function getApi(requestUrl, currentCityname) {
     })
   }
   
-
+// Button for search city
 citySearch.addEventListener("click", function(){
  console.log(cityName.value);
 
+//  Button storing search
  const newButton = document.createElement("button");
  newButton.innerText=cityName.value;
  document.getElementById("newbutton").append(newButton);
@@ -60,12 +61,15 @@ function getForecast(forecast){
   console.log(forecast);
 
   var iconUrl = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+  
+
 
   let weatherCard = `<div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">header</div><img src="${iconUrl}" width= "50px" alt="icon">
+  <div class="card-header">${cityName.value}</div><img src="${iconUrl}" width= "50px" alt="icon">
   <div class="card-body text-primary">
-    <p class="card-text">Temperature: ${data.daily[0].temp.day}</p>
+    <p class="card-text">Temperature: ${forecast.temp.day}</p>
     <p class="card-text">Humidity: ${forecast.humidity} %</p>
+    <p class="card-text">UV Index: ${forecast.uvi}</p>
   </div>
 </div>`
 
@@ -91,3 +95,4 @@ cardDeckEl.innerHTML += weatherCard;
 
 // console.log(cityName);
 // cityName.innerHTML += otherCards;
+
