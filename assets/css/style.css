@@ -25,9 +25,6 @@ body{
 }
 
 
-
-
-
   /* Cards */
 
 .main-card{
@@ -36,3 +33,7 @@ body{
 .card-deck{
   padding-left: 50px;
   }
+
+  /* .container {
+    display:flexbox;
+  } */

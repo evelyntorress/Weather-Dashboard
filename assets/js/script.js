@@ -29,6 +29,7 @@ function getApi(requestUrl, currentCityname) {
       })
       .then(function(data){
         console.log(data);
+        cardDeckEl.innerHTML=""
         displayCity.textContent=currentCityname;
         cityTemp.textContent= 'Temperature: ' + data.current.temp + ' °C';
         cityWind.textContent= 'Wind: ' + data.current.temp + ' MPH';
@@ -60,10 +61,10 @@ citySearch.addEventListener("click", function(){
 function getForecast(forecast){
   console.log(forecast);
 
+  // var to get the icon
   var iconUrl = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
-  
 
-
+// displaying the values in the 5 cards
   let weatherCard = `<div class="card border-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">${cityName.value}</div><img src="${iconUrl}" width= "50px" alt="icon">
   <div class="card-body text-primary">
