@@ -34,7 +34,8 @@ function getApi(requestUrl, currentCityname) {
         cityWind.textContent= 'Wind: ' + data.current.temp + ' MPH';
         cityHumidity.textContent='Humidity: ' + data.current.humidity + '%';
         cityUVindex.textContent='UV Index: ' + data.current.uvi;  
-// for loop to get forecast for 5 days
+      
+
         for(let i = 0; i < 5; i++){
           getForecast(data.daily[i]);
         }
@@ -42,32 +43,29 @@ function getApi(requestUrl, currentCityname) {
     })
   }
   
-// Search button
+
 citySearch.addEventListener("click", function(){
  console.log(cityName.value);
 
-// Button to store the history of cities
  const newButton = document.createElement("button");
  newButton.innerText=cityName.value;
  document.getElementById("newbutton").append(newButton);
 
-// Call the function to get the weather
+
  getApi('https://api.openweathermap.org/data/2.5/weather?q='+cityName.value+'&units=metric&appid=d1d93dfb4797fd38a2dfd1ffdf5b1f7a' , cityName.value)
 })
 
-// function to get forecast
+
 function getForecast(forecast){
   console.log(forecast);
 
-// Putting icon in the browser
   var iconUrl = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
 
-// Card with the info 
   let weatherCard = `<div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div><img src="${iconUrl}" width= "50px" alt="icon">
+  <div class="card-header">header</div><img src="${iconUrl}" width= "50px" alt="icon">
   <div class="card-body text-primary">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">humidity: ${forecast.humidity}.</p>
+    <p class="card-text">Temperature: ${data.daily[0].temp.day}</p>
+    <p class="card-text">Humidity: ${forecast.humidity} %</p>
   </div>
 </div>`
 
@@ -77,5 +75,19 @@ cardDeckEl.innerHTML += weatherCard;
 }
 
 
+// let otherCards = 
+// `<div class="main-card">
+// <div class="card w-75">
+// <div class="card-body">
+//  <h3 class="card-title" id="${iconUrl}">City</h3>
+//  <p class="card-text" id="cityTemp">Temperature</p>
+//  <p class="card-text" id="cityWind">Wind</p>
+//  <p class="card-text" id="cityHumidity">Humidity</p>
+//  <p class="card-text" id="cityUVindex">UV Index</p><a href="#" class="btn btn-primary">Button</a>
+// </div>
+// </div>
+// </div>`
 
 
+// console.log(cityName);
+// cityName.innerHTML += otherCards;
