@@ -24,6 +24,29 @@ body{
   padding: 0px 850px 10px 10px;
 }
 
+#newbutton{
+  padding: 5px 32px;  
+}
+
+/* Search button */
+#citySearch{
+  background-color:#00a5cf;
+  padding: 7px 106px;
+  margin-top:15px; 
+  border-radius: 5px;
+}
+
+/* Auto generate button */
+button{
+  background-color:#AAAAAA;
+  padding: 7px 70px;
+  margin-top: 5px; 
+  border-radius: 5px;
+}
+
+element.style {
+width: 250px;
+}
 
   /* Cards */
 
@@ -32,8 +55,17 @@ body{
 }
 .card-deck{
   padding-left: 50px;
+  display: inline-block;
   }
-
-  /* .container {
-    display:flexbox;
-  } */
+    
+.wrapper {
+   display:flex;
+}
+.search-input {
+   width: 25%;
+   display: inline-block;
+}
+.results {
+   width: 75%;
+   display: inline-block;
+}
