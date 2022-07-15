@@ -23,5 +23,4 @@ The following image shows the web application's appearance and functionality:
 
 ## Application
 
-Deployed site
-
+Deployed site [click here](https://evelyntorress.github.io/studious-octo-guide/)
