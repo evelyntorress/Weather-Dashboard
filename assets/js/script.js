@@ -15,7 +15,7 @@ var cityUVindex = document.getElementById("cityUVindex");
 var cardDeckEl = document.getElementById('card-deck');
 
 
-// Function to get city accordign search, temperature, wind, humidity
+// Function to get city according search, temperature, wind, humidity and uv index.
 function getApi(requestUrl, currentCityname) {
     fetch(requestUrl)
       .then(function (response) {
@@ -44,7 +44,7 @@ function getApi(requestUrl, currentCityname) {
     })
   }
   
-// Button for search city
+// Button for city search
 citySearch.addEventListener("click", function(){
  console.log(cityName.value);
 
@@ -69,7 +69,7 @@ function getForecast(forecast){
   let weatherCard = `<div class="card border-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">${cityName.value}</div><img src="${iconUrl}" width= "50px" alt="icon">
   <div class="card-body text-primary">
-    <p class="card-text">Temperature: ${forecast.temp.day}</p>
+    <p class="card-text">Temperature: ${forecast.temp.day}ºC</p>
     <p class="card-text">Humidity: ${forecast.humidity} %</p>
     <p class="card-text">UV Index: ${forecast.uvi}</p>
   </div>
@@ -79,21 +79,3 @@ console.log(cardDeckEl);
 cardDeckEl.innerHTML += weatherCard;
 
 }
-
-// UV INDEX
-
-
-
-`<div class="results">
-<div class="main-card">
-  <div class="card w-75">
-    <div class="card-body">
-      <h3 class="card-title" id="displayCity">City</h3>
-      <p class="card-text" id="cityTemp">Temperature</p>
-      <p class="card-text" id="cityWind">Wind</p>
-      <p class="card-text" id="cityHumidity">Humidity</p>
-      <p class="card-text" id="cityUVindex">UV Index</p><a href="#" class="btn btn-primary">Button</a>
-    </div>
-  </div>
-</div>
-</div>`

@@ -19,8 +19,7 @@ If I click on a city in the search history, I am again presented with current an
 
 The following image shows the web application's appearance and functionality:
 
-![The weather app ](./Assets/06-server-side-apis-homework-demo.png)
-
+![The weather app ](./assets/images/weather_dashboard.png)
 
 ## Application
 

@@ -40,15 +40,15 @@ body{
 /* Auto generate button */
 button{
   background-color:#AAAAAA;
-  padding: 7px 70px;
-  margin-top: 15px; 
+  padding: 7px 110px;
+  margin-top: 10px; 
   border-radius: 5px;
 }
   /* Cards */
 
-/* .main-card{
-  padding: 50px 50px;
-} */
+.main-card{
+  padding-bottom: 50px;
+}
 
 #card-deck{
   display:flex;
@@ -57,9 +57,6 @@ button{
 
   }
     
-/* .wrapper {
-   display:flex;
-} */
 .search-input {
    width: 25%;
    display: inline-block;
