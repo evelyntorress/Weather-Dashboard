@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <div class="site">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Weather Dashboard</h1>
-
+  <body>
+    <div class="site">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Weather Dashboard</h1>
+        </div>
       </div>
-    </div>
 
-    <!-- Timeblocks go here -->
-    <!-- <div class="container">
+      <!-- Timeblocks go here -->
+      <!-- <div class="container">
     <h2>Current Time & Date: <br /></h2>
     <p id="currentDay" class="lead"></p>
   </div> -->
-      <div class="wrapper">
-        <div class="search-input">
-          <h4>Search for a city:</h4>
-          <!-- Button for search -->
-          <div>
-            <input type="search" id="cityName" placeholder="Search for a city..." size="30">
-            <button id="citySearch">Search</button>
-          </div>
-          <hr>
-          <br>
-          <div style="display:flex; flex-direction:column; " class="btn-group" id="newbutton"></div>
-
-          <br>
-        </div>
-        <div class="results">
-          <div class="main-card">
-            <div class="card w-75">
-              <div class="card-body">
-                <h3 class="card-title" id="displayCity">City</h3>
-                <p class="card-text" id="cityTemp">Temperature</p>
-                <p class="card-text" id="cityWind">Wind</p>
-                <p class="card-text" id="cityHumidity">Humidity</p>
-                <p class="card-text" id="cityUVindex">UV Index</p><a href="#" class="btn btn-primary">Button</a>
+      <div class="container-fluid p-0 ">
+        <div class="row no-gutters">
+          <div class="col-sm-3">
+            <div class="search-input">
+              <h4>Search for a city:</h4>
+              <!-- Button for search -->
+              <div>
+                <input
+                  type="search"
+                  id="cityName"
+                  placeholder="Search for a city..."
+                  size="30"
+                />
+                <button id="citySearch">Search</button>
               </div>
+              <hr />
+              <br />
+              <div
+                style="display: flex; flex-direction: column"
+                class="btn-group"
+                id="newbutton"
+              ></div>
+
+              <br />
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="results">
+              <div class="main-card">
+                <div class="card w-75">
+                  <div class="card-body">
+                    <h3 class="card-title" id="displayCity">City</h3>
+                    <p class="card-text" id="cityTemp">Temperature</p>
+                    <p class="card-text" id="cityWind">Wind</p>
+                    <p class="card-text" id="cityHumidity">Humidity</p>
+                    <p class="card-text" id="cityUVindex">UV Index</p>
+                  </div>
+                </div>
+              </div>
+              <div id="card-deck"></div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Main card -->
-    <!-- Card deck -->
-   
-    <div id="card-deck"></div>
+    </div>
 
-  </div>
+    <!-- moment and JS link -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-
-  <!-- moment and JS link -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

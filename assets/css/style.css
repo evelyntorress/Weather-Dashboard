@@ -19,6 +19,7 @@ body{
 .site{
   padding: 0px 70px;
 }
+
 /* Buttons */
 .btn-group{
   padding: 0px 850px 10px 10px;
@@ -40,32 +41,29 @@ body{
 button{
   background-color:#AAAAAA;
   padding: 7px 70px;
-  margin-top: 5px; 
+  margin-top: 15px; 
   border-radius: 5px;
 }
-
-element.style {
-width: 250px;
-}
-
   /* Cards */
 
-.main-card{
+/* .main-card{
   padding: 50px 50px;
-}
-.card-deck{
-  padding-left: 50px;
-  display: inline-block;
+} */
+
+#card-deck{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
   }
     
-.wrapper {
+/* .wrapper {
    display:flex;
-}
+} */
 .search-input {
    width: 25%;
    display: inline-block;
 }
 .results {
-   width: 75%;
-   display: inline-block;
+   width: 100%;
 }

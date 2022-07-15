@@ -48,6 +48,7 @@ function getApi(requestUrl, currentCityname) {
 citySearch.addEventListener("click", function(){
  console.log(cityName.value);
 
+
 //  Button storing search
  const newButton = document.createElement("button");
  newButton.innerText=cityName.value;
@@ -79,21 +80,20 @@ cardDeckEl.innerHTML += weatherCard;
 
 }
 
-
-// let otherCards = 
-// `<div class="main-card">
-// <div class="card w-75">
-// <div class="card-body">
-//  <h3 class="card-title" id="${iconUrl}">City</h3>
-//  <p class="card-text" id="cityTemp">Temperature</p>
-//  <p class="card-text" id="cityWind">Wind</p>
-//  <p class="card-text" id="cityHumidity">Humidity</p>
-//  <p class="card-text" id="cityUVindex">UV Index</p><a href="#" class="btn btn-primary">Button</a>
-// </div>
-// </div>
-// </div>`
+// UV INDEX
 
 
-// console.log(cityName);
-// cityName.innerHTML += otherCards;
 
+`<div class="results">
+<div class="main-card">
+  <div class="card w-75">
+    <div class="card-body">
+      <h3 class="card-title" id="displayCity">City</h3>
+      <p class="card-text" id="cityTemp">Temperature</p>
+      <p class="card-text" id="cityWind">Wind</p>
+      <p class="card-text" id="cityHumidity">Humidity</p>
+      <p class="card-text" id="cityUVindex">UV Index</p><a href="#" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+</div>
+</div>`
