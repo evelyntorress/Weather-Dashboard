@@ -1,4 +1,6 @@
-# 06 Server-Side APIs: Weather Dashboard
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Server-Side APIs: Weather Dashboard
 
 ## Description
 
@@ -9,7 +11,7 @@ Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) 
 
 When searching for a city, I am presented with the city’s current and future conditions, and that city is added to the search history.
 
-Display current weather conditions for that city, including the date, an icon representing weather conditions, the temperature, the humidity, the wind speed, and the UV index, with a color that indicates whether the conditions are favorable, moderate, or severe.
+Display current weather conditions for that city, including the date, an icon representing weather conditions, the temperature, the humidity, the wind speed, and the UV index.
 
 Check for future weather conditions for that city. I am presented with a 5-day forecast that displays the date, an icon representing weather conditions, the temperature, the wind speed, and the humidity.
 If I click on a city in the search history, I am again presented with current and future conditions for that city.
